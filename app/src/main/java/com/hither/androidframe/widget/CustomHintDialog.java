@@ -2,6 +2,7 @@ package com.hither.androidframe.widget;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -37,7 +38,9 @@ public class CustomHintDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.custom_dialog_hint_layout);
+        getWindow().setBackgroundDrawable(new BitmapDrawable());
         toast_hintText = $(R.id.toast_hintText);
         if (hint != null) {
             toast_hintText.setText(hint);

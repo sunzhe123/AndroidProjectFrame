@@ -3,4 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hither.androidframe.activity.SplashActivity"></RelativeLayout>
+    tools:context="com.hither.androidframe.activity.SplashActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startActivityBtn"
+        android:text="go" />
+</RelativeLayout>

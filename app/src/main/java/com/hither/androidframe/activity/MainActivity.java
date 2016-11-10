@@ -1,13 +1,18 @@
 package com.hither.androidframe.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import com.hither.androidframe.R;
+import com.hither.androidframe.tools.LogUtils;
 import com.hither.androidframe.tools.StatusBarUtil;
+import com.hither.androidframe.widget.CustomEditText;
 import com.hither.androidframe.widget.CustomHintDialog;
+import com.hither.androidframe.widget.TitleBar;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 public class MainActivity extends BaseActivity {
@@ -15,28 +20,15 @@ public class MainActivity extends BaseActivity {
     private SlidingMenu slidingMenu;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    public void initStatusBar() {
-
-        StatusBarUtil.setColor(this, R.color.alpha_gray);
-    }
-
-    @Override
-    public void initConfigs() {
-        context = getContext();
+    public int setContentViewResId() {
+        return R.layout.activity_main;
     }
 
     @Override
     public void initView() {
+        LogUtils.i("MainActivity", "==>MainActivity context:" + context);
         fragment_layout = $(R.id.fragment_layout);
         initSlidingMenu();
-        CustomHintDialog dialog = new CustomHintDialog(context, "请输入帐号");
-        dialog.show();
     }
 
     private void initSlidingMenu() {
@@ -50,5 +42,13 @@ public class MainActivity extends BaseActivity {
     @Override
     public Context getContext() {
         return this;
+    }
+
+    public void startOnclick(View view) {
+        switch (view.getId()) {
+            case R.id.loginBtn:
+                startActivity(new Intent(this, LoginActivity.class));
+                break;
+        }
     }
 }

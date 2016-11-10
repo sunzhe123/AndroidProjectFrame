@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
 
 import com.hither.androidframe.R;
+import com.hither.androidframe.tools.LogUtils;
 import com.hither.androidframe.tools.SharedPrefUtils;
 import com.hither.androidframe.utils.Constants;
 
@@ -22,36 +24,25 @@ public class SplashActivity extends BaseActivity {
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case 0:
-                    Intent intent_welcome = new Intent(context, WelcomeActivity.class);
-                    startActivity(intent_welcome);
-                    break;
-                case 1:
                     Intent intent_main = new Intent(context, MainActivity.class);
                     startActivity(intent_main);
+                    break;
+                case 1:
+                    Intent intent_welcome = new Intent(context, WelcomeActivity.class);
+                    startActivity(intent_welcome);
                     break;
             }
         }
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-    }
-
-    @Override
-    public void initStatusBar() {
-
-    }
-
-    @Override
-    public void initConfigs() {
-        context = getContext();
+    public int setContentViewResId() {
+        return R.layout.activity_splash;
     }
 
     @Override
     public void initView() {
-
+        LogUtils.i("SplashActivity", "==>SplashActivity context:" + context);
     }
 
     /**
@@ -64,6 +55,10 @@ public class SplashActivity extends BaseActivity {
         } else {
             handler.sendEmptyMessageDelayed(Constants.START_MAIN_ACTIVITY, 3000);
         }
+    }
+
+    public void startActivityBtn(View view) {
+        handler.sendEmptyMessageDelayed(Constants.START_WELCOME_ACTIVITY, 3000);
     }
 
     @Override

@@ -1,39 +1,11 @@
 [
     {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
         "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
         "source": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_fade_in.xml"
     },
     {
         "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
         "source": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
-        "source": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
@@ -44,8 +16,8 @@
         "source": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
+        "source": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
         "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
@@ -54,14 +26,6 @@
     {
         "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
         "source": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_popup_exit.xml"
     },
     {
         "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
@@ -74,9 +38,5 @@
     {
         "merged": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
         "source": "E:\\androidStudio_hither\\AndroidProjectFrame\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
-        "source": "F:\\android\\androidStudioWorkSpace\\baike\\library_slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\anim\\abc_fade_in.xml"
     }
 ]

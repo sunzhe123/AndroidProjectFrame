@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.hither.androidframe.R;
 import com.hither.androidframe.tools.StatusBarUtil;
 
 public abstract class BaseActivity extends AppCompatActivity {
@@ -14,19 +15,25 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //屏幕方向：肖像照(竖着的方向)
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initStatusBar();
+        setContentView(setContentViewResId());
         initConfigs();
         initView();
     }
 
-    public abstract void initStatusBar();
+    public void initStatusBar() {
+        StatusBarUtil.setColor(this, R.color.alpha_gray);
+    }
+
+    public abstract int setContentViewResId();
 
     /**
      * 初始化Context上下文,一般在子类中调用getContext()方法
      */
-    public abstract void initConfigs();
+    public void initConfigs() {
+        context = getContext();
+    }
 
     /**
      * 初始化视图

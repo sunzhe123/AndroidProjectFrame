@@ -4,11 +4,13 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hither.androidframe.R;
 import com.hither.androidframe.tools.LayoutInflaters;
+import com.hither.androidframe.tools.LogUtils;
 
 /**
  * 自定义标题栏
@@ -27,6 +29,7 @@ public class TitleBar extends RelativeLayout {
     protected TextView rightText;
 
     public TitleBar(Context context) {
+
         super(context);
         initTitleBarView(context, null);
     }
