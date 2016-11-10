@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--duration属性为动画持续时间-->
+    <!--fromYDelta 为动画起始时 Y坐标上的位置-->
+    <!--%p指相对于父容器-->
+    <translate
+        android:duration="600"
+        android:fromYDelta="100%p" />
+</set>
