@@ -2,6 +2,7 @@ package com.hither.androidframe.activity;
 
 import android.content.Context;
 import android.view.View;
+import android.view.Window;
 
 import com.hither.androidframe.R;
 import com.hither.androidframe.tools.LogUtils;
@@ -49,9 +50,16 @@ public class LoginActivity extends BaseActivity {
         String user = username.getText();
         String pass = password.getText();
         if ("".equals(user)) {
-            new CustomHintDialog(this, "请输入帐号").show();
+            CustomHintDialog dialog = new CustomHintDialog(this, "请输入帐号");
+            Window window = dialog.getWindow();
+//            window.setGravity(Gravity.CENTER);//设置对话框的显示位置
+            window.setWindowAnimations(R.style.mystyle);
+            dialog.show();
         } else if ("".equals(pass)) {
-            new CustomHintDialog(this, "请输入密码").show();
+            CustomHintDialog dialog = new CustomHintDialog(this, "请输入密码");
+            Window window = dialog.getWindow();
+            window.setWindowAnimations(R.style.mystyle);
+            dialog.show();
         }
     }
 }
