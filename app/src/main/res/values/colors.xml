@@ -152,4 +152,12 @@
     <color name="darkblue">#00008b</color><!--暗蓝色 -->
     <color name="navy">#000080</color><!--海军色 -->
     <color name="black">#000000</color><!--黑色 -->
+    <!-- start zxing -->
+    <color name="viewfinder_frame">#ff88ae00</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="new_bg_color">#ffffff</color>
+    <!-- end zxing -->
 </resources>
