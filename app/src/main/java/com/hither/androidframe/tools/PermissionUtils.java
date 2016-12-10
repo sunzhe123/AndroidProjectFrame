@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 
+import com.hither.androidframe.utils.Constants;
 import com.hither.androidframe.widget.CustomDialog;
 
 /**
@@ -12,7 +13,7 @@ import com.hither.androidframe.widget.CustomDialog;
  * Created by Administrator on 2016/11/14.
  */
 public class PermissionUtils {
-    public static int START_PERMISSION = 1;
+    public static int START_PERMISSION = 1;//用来判断在权限成功开启之后是否要跳转到其他页面(为1时跳转)
 
     /**
      * 检查是否拥有权限
@@ -21,7 +22,7 @@ public class PermissionUtils {
      * @param permission:需要判断的权限
      * @return
      */
-    public static boolean showCamera(Activity activity, String permission) {
+    public static boolean checkPermisson(Activity activity, String permission) {
         boolean resoult = ActivityCompat.checkSelfPermission(activity, permission) != PackageManager.PERMISSION_GRANTED;
         return resoult;
     }
@@ -33,7 +34,7 @@ public class PermissionUtils {
      * @param permission:权限
      * @param message:对话框消息
      */
-    public static void requestCameraPermission(final Activity activity, final String permission, String message, final int REQUEST_CAMERA) {
+    public static void requestPermission(final Activity activity, final String permission, String message, final int REQUEST_CAMERA) {
         //
         boolean result = ActivityCompat.shouldShowRequestPermissionRationale(activity, permission);
         if (result) {
@@ -53,27 +54,38 @@ public class PermissionUtils {
         }
     }
 
-    /**
-     * @param activity:代表当前的activity
-     * @param cls:权限开启后要跳转的activity
-     * @param requestCode:得到的请求码
-     * @param grantResults：所有要请求的权限的数组
-     * @param REQUEST_CODE：自己定义好的请求码，用来与申请权限时得到的请求码进行判断
-     * @param flag:用来判断在权限成功开启之后是否要跳转到其他页面(为1时跳转)
-     */
-    public static void onRequestPermissionsResult(Activity activity, Class<?> cls, int requestCode, int[] grantResults, int REQUEST_CODE, int flag) {
 
-        if (requestCode == REQUEST_CODE) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                //开启权限后是否跳到其他页面
-                if (flag == START_PERMISSION) {
-                    startPermissionActivity(activity, cls, REQUEST_CODE);
-                }
-            } else {
-                new CustomDialog(activity).setDialogMessage("权限被拒绝").setCancelables(true).show();
-            }
-        }
-    }
+//    /**
+//     * @param activity:代表当前的activity
+//     * @param cls:权限开启后要跳转的activity
+//     * @param requestCode:得到的请求码
+//     * @param grantResults：所有要请求的权限的数组
+//     * @param flag:用来判断在权限成功开启之后是否要跳转到其他页面(为1时跳转)
+//     */
+//    public static void onRequestPermissionsResult(Activity activity, Class<?> cls, int requestCode, int[] grantResults, int flag) {
+//        switch (requestCode) {
+//            case Constants.REQUEST_CAMERA:
+//                if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//                    //开启权限后是否跳到其他页面
+//                    if (flag == START_PERMISSION) {
+//                        startPermissionActivity(activity, cls, Constants.REQUEST_CAMERA);
+//                    }
+//                } else {
+//                    new CustomDialog(activity).setDialogMessage("权限被拒绝").setCancelables(true).show();
+//                }
+//                break;
+//            case Constants.CODE_COARSE_LOCATION:
+//                break;
+//            case Constants.CODE_FINE_LOCATION:
+//                break;
+//            case Constants.CODE_WRITE_EXTERNAL_STORAGE:
+//                break;
+//            case Constants.CODE_READ_EXTERNAL_STORAGE:
+//                break;
+//            case Constants.CODE_READ_PHONE_STATE:
+//                break;
+//        }
+//    }
 
     /**
      * @param activity:代表当前的activity

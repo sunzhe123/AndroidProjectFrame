@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.hither.androidframe.activity.MainActivity">
+    tools:context="com.hither.androidframe.project.MainActivity">
 
     <Button
         android:id="@+id/loginBtn"
@@ -21,6 +21,32 @@
         android:onClick="startOnclick"
         android:text="扫码" />
 
+    <Button
+        android:id="@+id/goMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startOnclick"
+        android:text="地图" />
+
+    <Button
+        android:id="@+id/shared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startOnclick"
+        android:text="一键分享" />
+
+    <Button
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startOnclick"
+        android:text="WebView界面" />
+    <Button
+        android:id="@+id/goTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startOnclick"
+        android:text="TabLayou界面" />
     <FrameLayout
         android:id="@+id/fragment_layout"
         android:layout_width="match_parent"

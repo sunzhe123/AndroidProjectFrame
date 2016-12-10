@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
 
-    <com.hither.androidframe.zxing.view.ViewfinderView
+    <com.hither.androidframe.project.zxing.view.ViewfinderView
         android:id="@+id/viewfinder_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -30,4 +30,8 @@
             android:textSize="14sp" />
     </RelativeLayout>
 
+    <com.hither.androidframe.widget.TitleBar
+        android:id="@+id/code_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </FrameLayout>

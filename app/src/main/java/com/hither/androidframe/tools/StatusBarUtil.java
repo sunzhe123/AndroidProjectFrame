@@ -17,7 +17,6 @@ import android.widget.LinearLayout;
 public class StatusBarUtil {
    // StatusBarUtil
     public static final int DEFAULT_STATUS_BAR_ALPHA = 112;
-
     /**
      * 设置状态栏颜色
      *

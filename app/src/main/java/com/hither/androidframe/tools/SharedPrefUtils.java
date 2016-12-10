@@ -13,7 +13,8 @@ public class SharedPrefUtils {
 
     static {
         if (sp == null) {
-            sp = PreferenceManager.getDefaultSharedPreferences(MyApplication.getInstance());
+            MyApplication.getInstance();
+            sp = PreferenceManager.getDefaultSharedPreferences(MyApplication.getInstanceContext());
         }
     }
 

@@ -30,6 +30,8 @@
     <color name="darkorange">#ff8c00</color><!--暗桔黄色 -->
     <color name="coral">#ff7f50</color><!--珊瑚色 -->
     <color name="hotpink">#ff69b4</color><!--热粉红色 -->
+    <color name="hotpink2">#ffff69b4</color><!--热粉红色 -->
+    <color name="touming">#E0000000</color>
     <color name="tomato">#ff6347</color><!--西红柿色 -->
     <color name="orangered">#ff4500</color><!--红橙色 -->
     <color name="deeppink">#ff1493</color><!--深粉红色 -->
@@ -62,6 +64,7 @@
     <color name="gainsboro">#dcdcdc</color><!--淡灰色 -->
     <color name="crimson">#dc143c</color><!--暗深红色 -->
     <color name="palevioletred">#db7093</color><!--苍紫罗兰色 -->
+    <color name="palevioletred2">#f47596</color><!--苍紫罗兰色 -->
     <color name="goldenrod">#daa520</color><!--金麒麟色 -->
     <color name="orchid">#da70d6</color><!--淡紫色 -->
     <color name="thistle">#d8bfd8</color><!--蓟色 -->

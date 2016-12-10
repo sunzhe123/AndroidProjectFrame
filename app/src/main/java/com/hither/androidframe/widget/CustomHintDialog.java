@@ -38,7 +38,6 @@ public class CustomHintDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.custom_dialog_hint_layout);
         getWindow().setBackgroundDrawable(new BitmapDrawable());
         toast_hintText = $(R.id.toast_hintText);

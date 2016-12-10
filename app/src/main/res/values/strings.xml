@@ -5,8 +5,9 @@
     <string name="soft_share">软件分享</string>
     <string name="soft_about">关于</string>
     <string name="ok">ok</string>
-    <string name="cancel">cancel</string>
-    <string name="permission_contacts_rationale">需要一下权限</string>
-    <string name="permission_camera_user_hint1">没有此权限，无法开启这个功能，请开启权限。请打开照相机权限</string>
-    <string name="permission_camera">无法开启这个功能,请打开照相机权限</string>
+    <string name="cancel">取消</string>
+    <string name="downtime">倒计时</string>
+    <string name="gaodeMap">高德地图</string>
+    <string name="baiduMap">百度地图</string>
+    <string name="gugeMap">谷歌地图</string>
 </resources>
